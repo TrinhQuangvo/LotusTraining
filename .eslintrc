@@ -1,5 +1,5 @@
 {
-  "extends": ["react-app","prettier" , "sass"],
+  "extends": ["react-app","prettier" , "scss"],
   "plugins": ["react","prettier" , "@typescript-eslint" , "node-sass"],
   "rules": {
     "prettier": [
