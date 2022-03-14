@@ -1,11 +1,11 @@
 {
-  "extends": ["react-app","prettier" , "scss"],
-  "plugins": ["react","prettier" , "@typescript-eslint" , "node-sass"],
+  "extends": [ 
+    "standard"
+  ], 
   "rules": {
-    "prettier": [
+    "prettier": [ 
       "warn",{
-        "arrowParens": "avoid",
-        "semi":false,
+        "arrowParens": "avoid", 
         "trailingComma": "none",
         "endOfLine": "lf",
         "tabWidth": 2,
