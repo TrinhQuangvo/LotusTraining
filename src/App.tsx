@@ -1,8 +1,9 @@
-import './App.scss'
-function App() {
+import './App.scss';
+
+const App = () => {
   return (
     <div className='app'>
-      <p>React Run</p>
+      <p>React is Running</p>
     </div>
   );
 }

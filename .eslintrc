@@ -1,0 +1,19 @@
+{
+  "extends": ["react-app","prettier" , "sass"],
+  "plugins": ["react","prettier" , "@typescript-eslint" , "node-sass"],
+  "rules": {
+    "prettier": [
+      "warn",{
+        "arrowParens": "avoid",
+        "semi":false,
+        "trailingComma": "none",
+        "endOfLine": "lf",
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "printWidth": 120,
+        "jsxSingleQuote": false
+      }
+    ]
+  }
+}
