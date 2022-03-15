@@ -1,19 +1,5 @@
 {
   "extends": [ 
     "standard"
-  ], 
-  "rules": {
-    "prettier": [ 
-      "warn",{
-        "arrowParens": "avoid", 
-        "trailingComma": "none",
-        "endOfLine": "lf",
-        "tabWidth": 2,
-        "useTabs": false,
-        "singleQuote": true,
-        "printWidth": 120,
-        "jsxSingleQuote": false
-      }
-    ]
-  }
+  ] 
 }
