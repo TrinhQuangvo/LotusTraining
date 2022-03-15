@@ -3,7 +3,7 @@ import './style.scss'
 
 const Checkout: React.FC = () => {
   return (
-    <div>Check Out Components sdsd   </div>
+    <div>Check Out Components</div>
   )
 }
 export default Checkout
