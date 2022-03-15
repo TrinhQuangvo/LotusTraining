@@ -35,8 +35,7 @@
     "lint": "eslint --ext ts,tsx src/",
     "lint:fix": "eslint --fix --ext ts,tsx src/",
     "prettier": "prettier --check \"src/**/(**.tsx|*.ts|*.scss)\"",
-    "prettier:fix": "prettier --write \"src/**/(**.tsx|*.ts|*.scss)\"",
-    "prepare": "husky install",
+    "prettier:fix": "prettier --write \"src/**/(**.tsx|*.ts|*.scss)\"", 
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
