@@ -12,5 +12,5 @@ const data: any = [
   { "id": 3, "name": "Iphone 13", "price": 1400, "currency": "USD" },
   { "id": 4, "name": "Iphone 13 Pro Max", "price": 1800, "currency": "USD" }
 ]
-export const EmptyCart = () => <Cart message='No Item Found' />
-export const DefaultCart = () => <Cart message="There's 4 items in your cart" data={data} />
+export const EmptyCart = () => <Cart />
+export const DefaultCart = () => <Cart data={data} />
