@@ -1,0 +1,21 @@
+
+.product {
+  display: flex;
+  align-items: center; 
+  &__image {
+    img{
+      width: 300px;
+    }
+  }
+  &__infor{
+    flex: 0 0 60%; 
+    &--name{
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+    &--price{
+      font-size: 20px;
+    } 
+  }
+}
+ 
