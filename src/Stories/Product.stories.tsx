@@ -1,4 +1,3 @@
-import React from 'react'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import Product from '../Components/Product'
 
@@ -12,5 +11,5 @@ const sampleProduct = {
   price: 1800
 }
 
-export const NotAvailableProduct = () => <Product />
-export const DefaultProduct = () => <Product {...sampleProduct} />
+export const NotAvailableProduct: ComponentStory<typeof Product> = () => <Product />
+export const DefaultProduct: ComponentStory<typeof Product> = () => <Product {...sampleProduct} />
