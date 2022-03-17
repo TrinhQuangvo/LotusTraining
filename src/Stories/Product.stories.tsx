@@ -9,4 +9,3 @@ export default {
 
 export const NotAvailableProduct = () => <Product />
 export const DefaultProduct = () => <Product name={'Iphone 13 Pro Max'} price={1800} />
-

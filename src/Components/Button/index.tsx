@@ -1,10 +1,11 @@
+import { FC } from 'react';
 import './style.scss'
 interface ButtonProps {
-  status?: string;
+  status: string;
   isFullWidth?: boolean;
   children?: string
 }
-const Button = (props: ButtonProps) => {
+const Button: FC<ButtonProps> = (props: ButtonProps) => {
   const { status, isFullWidth = false } = props
   const renderClass = `btn btn-${status} ${isFullWidth ? 'btn-block' : ''}`
 

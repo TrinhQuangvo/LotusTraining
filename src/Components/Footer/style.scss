@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px solid#da479e;
+  &__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+  }
+}
