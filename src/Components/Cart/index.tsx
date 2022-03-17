@@ -7,7 +7,7 @@ interface CartProps {
   data?: any;
 }
 
-const Cart: FC<CartProps> = ({ data }) => {
+const Cart: FC<CartProps> = ({ data }: CartProps) => {
   return (
     <FullWidthContainer>
       <div className="product__section">
@@ -17,15 +17,15 @@ const Cart: FC<CartProps> = ({ data }) => {
         </p>
         {!!data
           ? data.map((item: any) => {
-              return (
-                <div key={item.id} className="product__section--item">
-                  <p className="product__section--item-title">{item.name}</p>
-                  <p className="product__section--item-price">
-                    {item.price} {item.currency}
-                  </p>
-                </div>
-              );
-            })
+            return (
+              <div key={item.id} className="product__section--item">
+                <p className="product__section--item-title">{item.name}</p>
+                <p className="product__section--item-price">
+                  {item.price} {item.currency}
+                </p>
+              </div>
+            );
+          })
           : ''}
         <p className="product__section--item-total">
           Total : {!!data ? data.reduce((i: number, a: any, b: any) => a.price + i, 0) + ' USD' : '0 USD'}
