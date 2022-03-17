@@ -1,0 +1,13 @@
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    & img {
+        border-radius: 50%;
+    }
+}
+
+.profile-index {
+    line-height: 1.8;
+}
