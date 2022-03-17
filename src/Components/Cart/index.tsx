@@ -18,6 +18,7 @@ const Cart: FC<CartProps> = ({ data }: CartProps) => {
           ? data.map((item: any) => {
             return (
               <div key={item.id} className="product__section--item">
+                <input type="checkbox" name="" id="" />
                 <p className="product__section--item-title">{item.name}</p>
                 <p className="product__section--item-price">
                   {item.price} {item.currency}

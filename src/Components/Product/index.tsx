@@ -5,7 +5,7 @@ import placeholderImage2 from './../../Images/placeholder-image.png'
 import Button from '../Button'
 import './style.scss'
 
-type Props = {
+interface Props {
   name?: string;
   price?: number;
 }
@@ -26,7 +26,6 @@ const Product = ({ name, price }: Props) => {
             <Button isFullWidth={true} status='danger'>Liên Hệ Trả Góp</Button>
           </div> : <Button isFullWidth={false} status='success'>Trở Về Trang Mua Hàng</Button>
           }
-
         </div>
       </div>
     </FullWidthContainer>
