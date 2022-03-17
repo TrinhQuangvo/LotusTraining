@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import logo from './../../Images/image001.jpg'
+import './style.scss'
 
 const Footer: FC = () => {
   return (

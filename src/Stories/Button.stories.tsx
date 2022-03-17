@@ -15,17 +15,17 @@ export const Warning: ComponentStory<typeof Button> = () => (
   <Button status='warning'>Warning Button</Button>
 )
 export const WarningFullWidth: ComponentStory<typeof Button> = () => (
-  <Button status='danger' isFullWidth={true} >Warning Button But Full Width</Button>
+  <Button status='warning' isFullWidth={true} >Warning Button But Full Width</Button>
 )
 export const Success: ComponentStory<typeof Button> = () => (
   <Button status='success'>Success Button</Button>
 )
 export const SuccessFullWidth: ComponentStory<typeof Button> = () => (
-  <Button status='danger' isFullWidth={true} >Success Button But Full Width</Button>
+  <Button status='success' isFullWidth={true} >Success Button But Full Width</Button>
 )
 export const DefaultButton: ComponentStory<typeof Button> = () => (
-  <Button status='default'>Default Button</Button>
+  <Button>Default Button</Button>
 )
-export const defaultFullWidth: ComponentStory<typeof Button> = () => (
+export const DefaultFullWidth: ComponentStory<typeof Button> = () => (
   <Button status='default' isFullWidth={true} >Default Button But Full Width</Button>
 )
