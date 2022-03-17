@@ -5,14 +5,27 @@ export default {
   component: Button
 } as ComponentMeta<typeof Button>
 
-export const Primary: ComponentStory<typeof Button> = () => (
-  <Button backgroundColor='#ff0' label='Button' />
+export const Danger: ComponentStory<typeof Button> = () => (
+  <Button status='danger' isFullWidth={false} >Danger Button </Button>
 )
-
-export const Secondary: ComponentStory<typeof Button> = () => (
-  <Button backgroundColor='red' label='😄👍😍💯' />
+export const DangerFullWidth: ComponentStory<typeof Button> = () => (
+  <Button status='danger' isFullWidth={true} >Danger Button But Full Width</Button>
 )
-
-export const Tertiary: ComponentStory<typeof Button> = () => (
-  <Button backgroundColor='blue' label='📚📕📈🤓' />
+export const Warning: ComponentStory<typeof Button> = () => (
+  <Button status='warning' isFullWidth={false}>Warning Button</Button>
+)
+export const WarningFullWidth: ComponentStory<typeof Button> = () => (
+  <Button status='danger' isFullWidth={true} >Warning Button But Full Width</Button>
+)
+export const Success: ComponentStory<typeof Button> = () => (
+  <Button status='success' isFullWidth={false}>Success Button</Button>
+)
+export const SuccessFullWidth: ComponentStory<typeof Button> = () => (
+  <Button status='danger' isFullWidth={true} >Success Button But Full Width</Button>
+)
+export const DefaultButton: ComponentStory<typeof Button> = () => (
+  <Button status='default' isFullWidth={false}>Default Button</Button>
+)
+export const defaultFullWidth: ComponentStory<typeof Button> = () => (
+  <Button status='default' isFullWidth={true} >Default Button But Full Width</Button>
 )

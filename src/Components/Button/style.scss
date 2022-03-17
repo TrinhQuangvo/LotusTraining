@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  padding: 12px;
+  color: #fff;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid;
+  &-block {
+    width: 100%;
+  }
+  &-default {
+    background-color: #fff;
+    color: #333;
+  }
+  &-danger {
+    background-color: rgb(226, 75, 75);
+  }
+  &-warning {
+    background-color: rgb(236, 141, 40);
+  }
+  &-success {
+    background-color: rgb(37, 169, 75);
+  }
+}
