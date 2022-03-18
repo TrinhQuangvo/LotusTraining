@@ -21,7 +21,7 @@ const Profile: FC<ProfileProps> = ({ data }) => {
                   <p className="profile-index-add">Address: {item.add}</p>
                   <p className="profile-index-phone">Phone: {item.phone}</p>
                   <Button isFullWidth={true} status="warning">
-                    View
+                    View more
                   </Button>
                 </div>
               );

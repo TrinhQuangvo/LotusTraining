@@ -10,27 +10,25 @@ interface CheckoutProps {
 const Checkout: FC<CheckoutProps> = ({ data }) => {
   return (
     <FullWidthContainer>
-      <h1 className="checkout-index-title">Checkout</h1>
-      {/* {!!data
-          ? data.map((item: any, index: number) => { */}
-      <div className="checkout">
-        {/* <img src={placeholderImage} /> */}
-        {!!data ? (
-          data.map((item: any, index: number) => {
-            return (
-              <div key={index} className="checkout-container">
-                <img src={placeholderImage} />
-                <div>
+      <>
+        <h1 className="checkout-index-title">Checkout</h1>
+        <div className="checkout">
+          {!!data ? (
+            data.map((item: any, index: number) => {
+              return (
+                <div key={index} className="checkout-container">
+                  <img src={placeholderImage} />
+                  {/* <div> */}
                   <form className="checkout-container-order">
-                    <h3>My Order</h3>
+                    <h3>Đơn hàng</h3>
                     <p className="checkout-index-name">Name Produce: {item.name}</p>
                     <p className="checkout-index-price">
                       Price Produce: {item.price}
                       {item.currency}
                     </p>
                   </form>
-                </div>
-                <div>
+                  {/* </div> */}
+                  {/* <div> */}
                   <form className="checkout-container-details">
                     <h3>Shipment Details</h3>
                     <label htmlFor="">Name</label> <br />
@@ -39,8 +37,8 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
                     <label htmlFor="">Phone number</label> <br />
                     <input type="text" placeholder="Phone number" />
                   </form>
-                </div>
-                <div>
+                  {/* </div>
+                  <div> */}
                   <form className="checkout-container-details">
                     <label htmlFor="">Address: </label> <br />
                     <input type="text" placeholder="Address" />
@@ -64,15 +62,16 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
                     </Button>
                   </form>
                 </div>
-              </div>
-            );
-          })
-        ) : (
-          <Button isFullWidth={false} status="success">
-            Trở Về Trang Mua Hàng
-          </Button>
-        )}
-      </div>
+                // </div>
+              );
+            })
+          ) : (
+            <Button isFullWidth={false} status="danger">
+              Please go back to product selection
+            </Button>
+          )}
+        </div>
+      </>
     </FullWidthContainer>
   );
 };
