@@ -23,18 +23,18 @@ const Product = ({ name, price }: Props) => {
           {!!name ? (
             <div className="button-group">
               <Button isFullWidth={true} status="warning">
-                Mua Ngay
+                Buy Now
               </Button>
               <Button isFullWidth={true} status="success">
-                Thêm Vào Giỏ Hàng
+                Add To Cart
               </Button>
               <Button isFullWidth={true} status="danger">
-                Liên Hệ Trả Góp
+                Contact To Installment
               </Button>
             </div>
           ) : (
             <Button isFullWidth={false} status="success">
-              Trở Về Trang Mua Hàng
+              Back To Product Page
             </Button>
           )}
         </div>
