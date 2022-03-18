@@ -12,21 +12,24 @@ h1 {
     & img {
         width: 300px;
     }
-}
-
-.checkout-container {
-    line-height: 1.8;
-    &-order {
-        width: 300px;
-        background: #f7f7f7;
-        padding: 15px;
-        margin: 5px;
-    }
-    &-details {
-        width: 300px;
-        background: #c9c0c0;
-        padding: 15px;
-        margin: 5px;
+    &-container {
+        line-height: 1.8;
+        display: inline-flex;
+        height: 250px;
+        &-order {
+            width: 300px;
+            background: #efefef;
+            padding: 15px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        &-details {
+            width: 300px;
+            background: #efefef;
+            padding: 15px;
+            margin: 5px;
+            border-radius: 10px;
+        }
     }
 }
 
