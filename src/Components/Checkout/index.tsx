@@ -67,15 +67,5 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
 };
 export default Checkout;
 {
-  /* <form className="checkout-index-payment">
-                      <label htmlFor="">Payment methods: </label>
-                      <select className="form-select">
-                        <option selected>Cash</option>
-                        <option value="1">Transfer</option>
-                        <option value="2">Credit</option>
-                      </select>
-                    </form> */
-}
-{
-  /* <Button isFullWidth={true} status="warning" />  */
-}
+
+
