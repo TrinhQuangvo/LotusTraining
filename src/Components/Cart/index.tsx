@@ -32,7 +32,7 @@ const Cart: FC<CartProps> = ({ data }: CartProps) => {
         </p>
         {!!data ? (
           <Button isFullWidth={false} status="danger">
-            Thanh Toán
+            Purchase
           </Button>
         ) : (
           ''
