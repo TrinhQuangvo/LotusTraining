@@ -13,11 +13,12 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
       <>
         <h1 className="checkout-index-title">Checkout</h1>
         <div className="checkout">
-          <img src={placeholderImage} />
-          {!!data
-            ? data.map((item: any) => {
+          {!!data ? (
+            data.map((item: any, index: number) => {
               return (
-                <div className="checkout-container">
+                <div key={index} className="checkout-container">
+                  <img src={placeholderImage} />
+                  {/* <div> */}
                   <form className="checkout-container-order">
                     <h3>Đơn hàng</h3>
                     <p className="checkout-index-name">Name Produce: {item.name}</p>
@@ -26,6 +27,8 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
                       {item.currency}
                     </p>
                   </form>
+                  {/* </div> */}
+                  {/* <div> */}
                   <form className="checkout-container-details">
                     <h3>Shipment Details</h3>
                     <label htmlFor="">Name</label> <br />
@@ -34,32 +37,39 @@ const Checkout: FC<CheckoutProps> = ({ data }) => {
                     <label htmlFor="">Phone number</label> <br />
                     <input type="text" placeholder="Phone number" />
                   </form>
+                  {/* </div>
+                  <div> */}
+                  <form className="checkout-container-details">
+                    <label htmlFor="">Address: </label> <br />
+                    <input type="text" placeholder="Address" />
+                    <br />
+                    <label htmlFor="">Payment methods: </label> <br />
+                    <select className="form-select">
+                      <option selected>Cash</option>
+                      <option value="1">Transfer</option>
+                      <option value="2">Credit</option>
+                    </select>
+                    <div className="details_btn">
+                      <Button isFullWidth={false} status="danger">
+                        Office
+                      </Button>
+                      <Button isFullWidth={false} status="danger">
+                        Home
+                      </Button>
+                    </div>
+                    <Button status="danger" isFullWidth={true}>
+                      Save
+                    </Button>
+                  </form>
                 </div>
+                // </div>
               );
             })
-            : ''}
-          <form className="checkout-container-details">
-            <label htmlFor="">Address: </label> <br />
-            <input type="text" placeholder="Address" />
-            <br />
-            <label htmlFor="">Payment methods: </label> <br />
-            <select className="form-select">
-              <option selected>Cash</option>
-              <option value="1">Transfer</option>
-              <option value="2">Credit</option>
-            </select>
-            <div className="details_btn">
-              <Button isFullWidth={false} status="danger">
-                Office
-              </Button>
-              <Button isFullWidth={false} status="danger">
-                Home
-              </Button>
-            </div>
-            <Button status="danger" isFullWidth={true}>
-              Save
+          ) : (
+            <Button isFullWidth={false} status="danger">
+              Please go back to product selection
             </Button>
-          </form>
+          )}
         </div>
       </>
     </FullWidthContainer>

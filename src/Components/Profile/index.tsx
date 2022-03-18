@@ -12,16 +12,16 @@ const Profile: FC<ProfileProps> = ({ data }) => {
       <div className="profile">
         <img src={profile} />
         {!!data
-          ? data.map((item: any) => {
+          ? data.map((item: any, index: number) => {
               return (
-                <div className="profile-index">
+                <div key={index} className="profile-index">
                   <h2 className="profile-index-title">Personal Information</h2>
                   <p className="profile-index-item">Full name: {item.name}</p>
                   <p className="profile-index-age">Age: {item.age}</p>
                   <p className="profile-index-add">Address: {item.add}</p>
                   <p className="profile-index-phone">Phone: {item.phone}</p>
                   <Button isFullWidth={true} status="warning">
-                    Xem thêm
+                    View more
                   </Button>
                 </div>
               );
