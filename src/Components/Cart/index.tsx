@@ -12,7 +12,7 @@ const Cart: FC<CartProps> = ({ data }: CartProps) => {
     <FullWidthContainer>
       <div className="product__section">
         <p className="product__section-title">
-          {!!data ? `There's is ${data.length} Items in Your Cart` : 'Your Cart Is Empty'}{' '}
+          {!!data ? `There's is ${data.length} Items in Your Cart` : 'Your Cart Is Empty'}
         </p>
         {!!data
           ? data.map((item: any) => {
