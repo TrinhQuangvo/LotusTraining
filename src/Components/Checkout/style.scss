@@ -10,12 +10,12 @@ h1 {
     // align-items: center;
     justify-content: space-around;
     & img {
-        width: 300px;
+        width: 250px;
     }
     &-container {
         line-height: 1.8;
         display: inline-flex;
-        height: 250px;
+        // height: 250px;
         &-order {
             width: 300px;
             background: #efefef;
@@ -35,18 +35,22 @@ h1 {
 
 input {
     height: 25px;
-    width: 250px;
+    width: 100%;
 }
 
 .form-select {
     height: 25px;
-    width: 255px;
+    width: 100%;
 }
 
-.details_btn {
-    text-align: center;
-    margin: 20px;
+.details_add {
+    // text-align: center;
+    // margin: 20px;
     & button {
         margin: 0 5px;
+    }
+    & .form-btn {
+        display: flex;
+        justify-content: center;
     }
 }
