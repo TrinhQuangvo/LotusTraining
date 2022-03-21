@@ -10,24 +10,24 @@ interface CartProps {
 const Cart: FC<CartProps> = ({ data }: CartProps) => {
   return (
     <FullWidthContainer>
-      <div className="product__section">
-        <p className="product__section-title">
+      <div className="cart__section">
+        <p className="cart__section-title">
           {!!data ? `There's is ${data.length} Items in Your Cart` : 'Your Cart Is Empty'}
         </p>
         {!!data
           ? data.map((item: any) => {
             return (
-              <div key={item.id} className="product__section--item">
+              <div key={item.id} className="cart__section--item">
                 <input type="checkbox" name="" id="" />
-                <p className="product__section--item-title">{item.name}</p>
-                <p className="product__section--item-price">
+                <p className="cart__section--item-title">{item.name}</p>
+                <p className="cart__section--item-price">
                   {item.price} {item.currency}
                 </p>
               </div>
             );
           })
           : ''}
-        <p className="product__section--item-total">
+        <p className="cart__section--item-total">
           Total : {!!data ? data.reduce((i: number, a: any, b: any) => a.price + i, 0) + ' USD' : '0 USD'}
         </p>
         {!!data ? (

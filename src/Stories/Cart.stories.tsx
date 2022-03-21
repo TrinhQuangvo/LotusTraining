@@ -4,7 +4,7 @@ import Cart from '../Components/Cart'
 
 export default {
   title: 'Components/Cart',
-  component: Cart
+  component: Cart,
 } as ComponentMeta<typeof Cart>
 
 const data = [
