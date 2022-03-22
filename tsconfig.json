@@ -16,14 +16,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true
   },
-  "exclude": [ 
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest", 
-  ],
-  "types": [
-    "typePatches"
-  ]
+  "exclude": ["build", "scripts", "acceptance-tests", "webpack", "jest"],
+  "types": ["typePatches"]
 }

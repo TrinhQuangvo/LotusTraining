@@ -1,13 +1,12 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 import FullWidthContainer from '../Components/Container'
 import Product from '../Components/Product'
-import AllProduct from '../Components/Product/AllProducts'
-import { IMAGES } from './../Images'
+import AllProducts from '../Components/Product/AllProducts'
+import { IMAGES } from '../Images'
 
-console.log(IMAGES)
 export default {
   title: 'Components/Product',
-  component: Product
+  component: Product,
 } as ComponentMeta<typeof Product>
 
 interface iProduct {
@@ -75,7 +74,6 @@ const sampleProducts = [
   }
 ]
 
-
 const sampleProductsDiscount = [
   {
     name: 'Iphone 13 Pro Max',
@@ -121,12 +119,12 @@ const sampleProductsDiscount = [
 export const NotAvailableProduct: ComponentStory<typeof Product> = () => <Product />
 export const DetailProduct: ComponentStory<typeof Product> = () => <Product {...sampleProduct} />
 
-export const AllProducts: ComponentStory<typeof Product> = () => {
+export const ShowAllProducts: ComponentStory<typeof Product> = () => {
   return (
     <FullWidthContainer>
       <div className="product__wrapper">
         {
-          sampleProducts.map((item: iProduct, index: number) => <AllProduct key={index} {...item} />)
+          sampleProducts.map((item: iProduct, index: number) => <AllProducts key={index} {...item} />)
         }
       </div>
     </FullWidthContainer>
@@ -138,7 +136,7 @@ export const AllProductsButDiscount: ComponentStory<typeof Product> = () => {
     <FullWidthContainer>
       <div className="product__wrapper">
         {
-          sampleProductsDiscount.map((item: iProduct, index: number) => <AllProduct key={index} {...item} />)
+          sampleProductsDiscount.map((item: iProduct, index: number) => <AllProducts key={index} {...item} />)
         }
       </div>
     </FullWidthContainer>
@@ -146,4 +144,3 @@ export const AllProductsButDiscount: ComponentStory<typeof Product> = () => {
 }
 
 export const DiscountProduct: ComponentStory<typeof Product> = () => <Product {...sampleDiscountProduct} />
-
