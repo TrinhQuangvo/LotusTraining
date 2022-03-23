@@ -1,13 +1,15 @@
 import { FC } from 'react';
 import './style.scss';
 interface InputProps {
-  status?: string;
   isFullWidth?: boolean;
-  children?: string;
+  isPw?: boolean;
+  type: string;
 }
 const Input: FC<InputProps> = (props: InputProps) => {
-  const { status = 'default', isFullWidth = false } = props;
-  const renderClass = `input input-${status} ${isFullWidth ? 'input-block' : ''}`;
-  return <input className={renderClass}> {props.children} </input>;
+  const { type = 'text', isFullWidth = false, isPw = false } = props;
+  const renderClass = `input ${isFullWidth ? 'input-block' : ''}`;
+  console.log(renderClass);
+
+  return <input type={isPw ? 'password' : type} className={renderClass}></input>;
 };
 export default Input;

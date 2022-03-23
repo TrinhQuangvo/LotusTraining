@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import FullWidthContainer from '../Container/';
 import Button from './../Button';
+import Input from './../Input';
 
 interface UserProps {
   data?: any;
@@ -38,6 +39,7 @@ const User: FC<UserProps> = ({ data }) => {
             <br />
             <label htmlFor="">Password: </label>
             <input type="password" />
+            {/* <Input status="password "></Input> */}
             <br />
           </div>
           <Button status="danger">Danger Button </Button>
