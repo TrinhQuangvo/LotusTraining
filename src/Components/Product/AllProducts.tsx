@@ -8,7 +8,7 @@ interface Props {
   storage?: string[]
 }
 
-function AllProducts({ image, name, price, isDiscount, storage }: Props) {
+const AllProducts = ({ image, name, price, isDiscount, storage }: Props) => {
   return (
     <div className="product__wrapper--item">
       {isDiscount ? <div className='discount-ribbon'></div> : ''}

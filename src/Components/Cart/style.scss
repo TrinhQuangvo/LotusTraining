@@ -1,20 +1,28 @@
-.product {
+.cart {
   &__section {
     &-title {
       font-size: 32px;
       text-align: center;
       padding: 40px 0;
     }
-    &--item{
+    &--item {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
-      &-total{
+      &-image {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+      }
+      &-checkbox {
+        width: auto;
+      }
+      &-total {
         padding: 20px 0;
-        text-align: right; 
-        font-size: 24px; 
+        text-align: right;
+        font-size: 24px;
       }
     }
   }
-} 
+}
